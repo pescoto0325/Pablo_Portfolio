@@ -1,0 +1,60 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+path = '/content/drive/MyDrive/FIFA FUT 22/'
+df = pd.read_csv(path + 'Fifa 22 Fut Players.csv')
+df.Price1 = pd.to_numeric(df['Price1'])
+
+df.head(10)
+df = pd.DataFrame(data=df)
+dff = df[df['Role'] == 'Forward']
+dfd = df[df['Role'] == 'DEFENSE']
+dfm = df[df['Role'] == 'Midfielder']
+dff.shape
+
+formula = 'Price1 ~  SKI + WF + PAC + RAT + SHO + PAS + DEF '
+
+import statsmodels.formula.api as smf
+import seaborn as sns
+import matplotlib.pyplot as plt
+#but we don't really need dummies! 
+resf = smf.ols(formula, data = dff).fit()
+rsquared, paramf, pvalues = resf.rsquared, resf.params, resf.pvalues
+resf.summary()
+
+paramf
+resm = smf.ols(formula, data = dfm).fit()
+rsquared, paramm, pvalues = resm.rsquared, resm.params, resm.pvalues
+resm.summary()
+
+resm = smf.ols(formula, data = dfm).fit()
+rsquared, paramm, pvalues = resm.rsquared, resm.params, resm.pvalues
+resm.summary()
+
+paramm
+
+resd = smf.ols(formula, data = dfd).fit()
+rsquared, paramd, pvalues = resm.rsquared, resd.params, resm.pvalues
+resd.summary()
+
+from pandas.core.reshape.concat import concat
+paramd
+parametersd = pd.DataFrame(paramd,columns=['Defender'])
+parametersf = pd.DataFrame(paramf,columns=['Forward'])
+parametersm = pd.DataFrame(paramm,columns=['Midfielder'])
+lista = [parametersf,parametersm,parametersd]
+parametros = pd.concat(lista, axis=1, join="inner")
+parametros = parametros.iloc[1:,:]
+parametros.reset_index()
+parametros
+
+tparametros = parametros.transpose()
+tparametros
+
+tparametros.plot(kind="bar",rot=0,sort_columns=True,figsize=(15,15))
+plt.title("Price per stat")
+plt.ylim(0 , 20000)
+plt.legend(loc=7,fontsize=15)
+plt.xlabel("Position")
+plt.ylabel("Fifa Coins")
