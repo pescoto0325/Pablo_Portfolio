@@ -12,6 +12,7 @@ Questions to answer:
 -Are the topics correlating with the ratings?
 
 ![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Polarity.png)
+![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/LDA.png)
 
 Dataset link
 kaggle datasets download -d ankkur13/edmundsconsumer-car-ratings-and-reviews
