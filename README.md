@@ -11,7 +11,7 @@ Questions to answer:
 -What are some topics to think when buying a Honda vehicle?
 -Are the topics correlating with the ratings?
 
-![](https://github.com/pescoto0325/Pablo_Portfolio/blob/6c26f203e78de1590998538ff5db03850e1e7ac0/Picture8.png)
+![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Polarity.png)
 
 Dataset link
 kaggle datasets download -d ankkur13/edmundsconsumer-car-ratings-and-reviews
