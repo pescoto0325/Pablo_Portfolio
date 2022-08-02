@@ -11,7 +11,7 @@ Questions to answer:
 * What are some topics to think when buying a Honda vehicle?
 * Are the topics correlating with the ratings?
 
-![][https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Polarity.png]
+![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Polarity.png)
 ![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Subjectivity.png)
 ![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/LDA.png)
 
