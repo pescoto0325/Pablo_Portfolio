@@ -11,7 +11,7 @@ Questions to answer:
 * What are some topics to think when buying a Honda vehicle?
 * Are the topics correlating with the ratings?
 
-![t](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Polarity.png)
+![t]( https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Polarity.png) 
 ![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Subjectivity.png)
 ![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/LDA.png)
 
@@ -24,4 +24,4 @@ Questions to answer:
 * What stats have a higher impact on a players price?
 * Is this relationship the same for all positions?
 * Is there a clear winner across all of the stats?
-![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Fifa%202022%20stats.png)
+![](Fifa%202022%20stats.png)
