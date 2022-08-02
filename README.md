@@ -24,3 +24,4 @@ Questions to answer:
 * What stats have a higher impact on a players price?
 * Is this relationship the same for all positions?
 * Is there a clear winner across all of the stats?
+![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Fifa%202022%20stats.png)
