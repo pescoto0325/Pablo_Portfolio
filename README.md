@@ -11,9 +11,9 @@ Questions to answer:
 * What are some topics to think when buying a Honda vehicle?
 * Are the topics correlating with the ratings?
 
-![t]( https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Polarity.png) 
+![t](Polarity.png) 
 ![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Subjectivity.png)
-![](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/LDA.png)
+![](LDA.png)
 
 
 ## Project 2: [Regression Analysis: Price per stat Model](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Price%20per%20stat%20Model)
