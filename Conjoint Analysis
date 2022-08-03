@@ -1,0 +1,93 @@
+import pandas as pd
+import numpy as np
+import statsmodels.formula.api as smf
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+conjoint_df = pd.read_csv('/content/drive/MyDrive/motorbike_conjoint.csv')
+conjoint_df.head()
+
+#Some data exploration first!
+conjoint_df.describe
+
+#How many respondents did they recruit?
+conjoint_df['resp_id'].unique()
+
+#How was the rating measured? On what scale?
+conjoint_df['rating'].unique()
+
+#What is the average rating?
+conjoint_df['rating'].mean()
+
+#What is the standard deviation of the rating?
+attributes = ['design','cylinders','color','brand', 'price'] #levels of atrributes 
+all_levels= []
+all_attributes= []
+for att in attributes:
+  tmp = conjoint_df[att].unique()
+  all_levels.extend(tmp)
+  all_attributes.extend([att]*len(tmp))
+
+all_attributes
+conjoint_df['rating'].std()
+
+#Show the average rating per level per attribute
+conjoint_df.groupby('design').rating.mean()
+conjoint_df.groupby('cylinders').rating.mean()
+conjoint_df.groupby('brand').rating.mean()
+conjoint_df.groupby('price').rating.mean()
+conjoint_df.groupby('color').rating.mean()
+
+#Lets get the regression to find the utility of each part!
+res = smf.ols('rating ~ C(design) + C(color) + C(brand)+C(price)+C(cylinders)',data = conjoint_df).fit()
+res.summary()
+
+df_res = pd.DataFrame({'attribute': all_attributes,'level': all_levels})
+df_res['coeff'] = 0
+for index,row in df_res.iterrows():
+  tmp_str = 'C('+str(row.attribute)+')[T.'+str(row.level)+']'
+  if tmp_str in res.params.keys():
+    df_res.iloc[index,-1] = res.params[tmp_str]
+
+#In here we get to have an idea on what attribute has a bigger impact
+means = df_res.groupby('attribute')['coeff'].mean().reset_index()
+means
+
+df_res = df_res.merge(means,how='left',on='attribute')
+df_res.head()
+
+#Now here is the level of importance of each attribute
+
+df_res['partworth'] = df_res['coeff_x'] - df_res['coeff_y']
+df_res.sort_values(by='partworth',inplace=True)
+
+#Visualize it
+f, ax = plt.subplots(figsize=(14, 8))
+plt.title('Part Worth')
+pwu = df_res['partworth']
+xbar = np.arange(len(pwu))
+plt.barh(xbar, pwu)
+plt.yticks(xbar, labels=df_res['attribute'].astype(str)+df_res['level'].astype(str))
+plt.show()
+
+
+utility_range = df_res.groupby('attribute')['partworth'].max()-df_res.groupby('attribute')['partworth'].min()
+utility_range = utility_range.reset_index()                           
+utility_range['relative_importance'] = utility_range['partworth'] / utility_range['partworth'].sum()
+utility_range = utility_range.sort_values(by='relative_importance')
+
+
+#Importance compared to other attributes
+
+f, ax = plt.subplots(figsize=(12, 8))
+xbar = np.arange(len(utility_range['relative_importance']))
+plt.title('Importance')
+
+plt.barh(xbar,utility_range['relative_importance'],color=['red','yellow','blue','blue','green'])
+for i, v in enumerate(utility_range['relative_importance']):
+    ax.text(v , i + .25, '{:.2f}'.format(v))
+plt.ylabel('attributes')
+plt.xlabel('% importance')
+plt.yticks(xbar, utility_range['attribute'])
+plt.show()
