@@ -45,9 +45,16 @@ Questions this project answers:
 * Are the topics correlating with the ratings?
 
 ![](Polarity.png) 
+
+Based on our dataset, most of the reviews show a positive take. (0 = bad, 1 = good)
+
 ![](Subjectivity.png)
+
+Based on our dataset, most of our reviews fact-based as we can see higher subjectivity. (0 = opinion, 1 = fact)
+
 ![](LDA.png)
 
+Here is a look at all the topics in our reviews, we can see how the word vehicle is the most used word (we are talking about cars) and how the Honda Odissey seems to be their their most spoken model.
 
 ## Project 4: [Conjoint Analysis: Feature importance in a product](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Conjoint%20Analysis)
 Analysis which provides statistical evidence on which feature has a greater impact in ratings.
