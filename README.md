@@ -37,5 +37,4 @@ Questions this project answers:
 * Which combination provides a better rating?
 * How many different products can be made from a defined set of features?
 
-![](Conjoint-attimportance.png)
-![](Conjoint-Partworth.png)
+![](Conjoint-Partworth.png) ![](Conjoint-attimportance.png)
