@@ -11,9 +11,13 @@ Questions this project answers:
 * What restaurants are similar/competitive to each other?
 * What kind of people go to a specific restaurant?
 * Is there a pattern between the restaurant or the client experience? (Are users too kind or is the place actually good)
+
+![][(Yelp.png)
+Going to using over 208166 reviews from users and 10233 ratings from restaurants using Yelp's API dataset
 ![](Filtering.png)
-![](Yelp.png | width=100)
-![](Example.png | width=100)
+There are 3 types of recommender algorithms(user-based, item-based, model-based) we are going to user the 3rd one)
+![](Example.png | width=100) 
+Here is a singular review in rating and how we are going to predict the rating for a restaurant, hence recommending it to a client.
 
 
 ## Project 2: [Regression Analysis: Price per stat Model](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Price%20per%20stat%20Model)
@@ -25,7 +29,6 @@ Questions this project answers:
 * Is this relationship the same for all positions?
 * Is there a clear winner across all of the stats?
 ![](Fifa%202022%20stats.png)
-
 
 
 ## Project 3: [Data Science NLP LDA Model: Project Overview](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/NLP%20LDA%20Model)
