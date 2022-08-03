@@ -13,10 +13,15 @@ Questions this project answers:
 * Is there a pattern between the restaurant or the client experience? (Are users too kind or is the place actually good)
 
 ![][(Yelp.png)
+
 Going to using over 208166 reviews from users and 10233 ratings from restaurants using Yelp's API dataset
+
 ![](Filtering.png)
-There are 3 types of recommender algorithms(user-based, item-based, model-based) we are going to user the 3rd one)
-![](Example.png | width=100) 
+
+There are 3 types of recommender algorithms (user-based, item-based, model-based) we are going to user the 3rd one)
+
+![](Example.png) 
+
 Here is a singular review in rating and how we are going to predict the rating for a restaurant, hence recommending it to a client.
 
 
