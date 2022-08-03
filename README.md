@@ -7,14 +7,14 @@ Hello there and welcome to my highlight reel for projects!
 
 In this exercise, we will get some hands on experience at building a product recommender system using collaborative filtering. In particular, we will implement Singular Value Decomposition. Using python, we would get an algorithm to suggest restaurants to user's based on their previous visits but also using restaurants that host similar clients. We are going to do so by using ratings as our numerical value attaching 1 restaurant and 1 user to each review. To prevent fake reviews we will only use 1 review per user per restaurant.
 
+We are going to using over 208166 reviews from users and 10233 ratings from restaurants using Yelp's API dataset
+
 Questions this project answers:
 * What restaurants are similar/competitive to each other?
 * What kind of people go to a specific restaurant?
 * Is there a pattern between the restaurant or the client experience? (Are users too kind or is the place actually good)
 
-![][(Yelp.png)
 
-Going to using over 208166 reviews from users and 10233 ratings from restaurants using Yelp's API dataset
 
 ![](Filtering.png)
  
