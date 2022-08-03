@@ -12,8 +12,8 @@ Questions this project answers:
 * What kind of people go to a specific restaurant?
 * Is there a pattern between the restaurant or the client experience? (Are users too kind or is the place actually good)
 ![](Filtering.png)
-![](Yelp.png)
-![](Example.png)
+![](Yelp.png | width=100)
+![](Example.png | width=100)
 
 
 ## Project 2: [Regression Analysis: Price per stat Model](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Price%20per%20stat%20Model)
