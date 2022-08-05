@@ -24,16 +24,28 @@ There are 3 types of recommender algorithms (user-based, item-based, model-based
 
 Here is a singular review in rating and how we are going to predict the rating for a restaurant, hence recommending it to a client.
 
+Applications
+* Recommender system for items (show new items to potential buyers,movies/series to users, resorts for travelers)
+* Uncover segments for a new products (showcase how similar items predict a new trend)
+* Able to quantify success across different users (Is our item only successful to one 
 
 ## Project 2: [Regression Analysis: Price per stat Model](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Price%20per%20stat%20Model)
 Why are the bests players in real life not the most expensive players in the game?
 In this analysis,  linear and logistic regression are used to understand the relationship between stats and in game price for all the players. The [dataset](https://www.kaggle.com/datasets/mohammedessam97/fifa-22-fut-players-dataset) shows the stats and in-game price for players in FIFA 22.
+
+Context:FIFA is the biggest football videogame in the world, it has its own currency (FIFA points) which can be used to buy players in its own market (FUTM). The market has its own price ranges (max price and min price) which means players are proposed values by the developers of the game, not the market sellers/buyers. Why is the highest rated player not the most expensive player?
 
 Questions this project answers:
 * What stats have a higher impact on a players price?
 * Is this relationship the same for all positions?
 * Is there a clear winner across all of the stats?
 ![](Fifa%202022%20stats.png)
+Surprisingly, Weak foot becomes the stat that increases price the most across all positions. This makes sense as being ambidextrous provides an advantage in any position.
+
+Applications
+* Find relationship between price and stats
+* Identify underlying features which could scale profits (invest on a low rated player with high weak foot)
+* Uncover less sought options for maximum results
 
 
 ## Project 3: [Data Science NLP LDA Model: Project Overview](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/NLP%20LDA%20Model)
@@ -56,6 +68,11 @@ Based on our dataset, most of our reviews fact-based as we can see higher subjec
 
 Here is a look at all the topics in our reviews, we can see how the word vehicle is the most used word (we are talking about cars) and how the Honda Odissey seems to be their their most spoken model.
 
+Applications
+* Identify commong themes in a dataset
+* Analyze how reliable data from reviews can be
+* Visualize commong topics for stakeholders
+
 ## Project 4: [Conjoint Analysis: Feature importance in a product](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Conjoint%20Analysis)
 Analysis which provides statistical evidence on which feature has a greater impact in ratings.
 
@@ -66,4 +83,15 @@ Questions this project answers:
 * Which combination provides a better rating?
 * How many different products can be made from a defined set of features?
 
-![](Conjoint-Partworth.png) ![](Conjoint-attimportance.png)
+As we can see below, when the price of a car is 7k, it has a positive impact on its rating by 1.5. Moving away is the pricetag of 10k which reduces its rating by 1.9.
+
+![](Conjoint-Partworth.png) 
+
+Below is the percentage of relative importance on each feature for a new car. Seems like we are price sensitive.
+
+![](Conjoint-attimportance.png)
+
+Applications:
+* Understand which importance of features for new products
+* Segment populations based on relative of importance
+* Find break-even for features in certain products
