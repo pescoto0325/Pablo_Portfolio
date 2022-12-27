@@ -1,0 +1,61 @@
+
+from dash import Dash, html, dcc, Input, Output
+import pandas as pd
+import plotly.express as px
+import pymysql
+import pandas as pd
+import mysql.connector
+import requests
+import datetime
+import json
+from sqlalchemy import create_engine
+import psycopg2
+from dash import Dash, html, dcc, Input, Output
+import pandas as pd
+import plotly.express as px
+import seaborn as sns
+
+mydb = mysql.connector.connect(
+  host="liganacionalsql.co0rpfgvyt6e.us-east-1.rds.amazonaws.com",
+  user="admin",
+  password="alejandralorena" 
+)
+
+
+cursor = mydb.cursor()
+stats = "select jps.*,jpi.name  from liganacionalsql.jugador_player_stats jps  left join liganacionalsql.jugador_player_info jpi on jpi .player_id = jps.player_id"
+avocado = pd.read_sql_query(stats,mydb)
+color_map = {'Attacker': 'red', 'Midfielder': 'green', 'Defender': 'yellow','Goalkeeper':'blue'}
+
+# Create the Dash app
+app = Dash()
+
+# Set up the app layout
+geo_dropdown = dcc.Dropdown(
+    options=[{"label": "All", "value": "all"}] + [{"label": x, "value": x} for x in avocado['club_name'].unique().tolist()],
+    value="all"  # set the default value to "all"
+)#geo_dropdown_2 = dcc.Dropdown(options=[{"label": "All", "value": "all"}] + [{"label": x, "value": x} for x in avocado['club_name'].unique().tolist()])
+
+
+app.layout = html.Div(style={'backgroundColor': '#0099CC'}, 
+children=[html.H1(style={'color': 'white'}, children='Goals per minutes'),
+geo_dropdown,
+dcc.Graph(id='price-graph')])
+
+
+# Set up the callback function
+@app.callback(
+    Output(component_id='price-graph', component_property='figure'),
+    Input(component_id=geo_dropdown, component_property='value'),
+ )
+def update_graph(selected_geography):
+    if selected_geography == "all":
+        filtered_avocado = avocado
+    else:
+        filtered_avocado = avocado[avocado['club_name'] == selected_geography]
+    
+    fig = px.scatter(filtered_avocado, x="minutes", y="goals", color="position", color_discrete_map=color_map,hover_data=["name", "club_name", "age","season"],title="Goals scored by position and minutes played",
+    labels={"minutes": "Minutes played", "goals": "Goals scored", "position": "Position"})
+    fig.update_layout(plot_bgcolor='#1a1a1a')
+    return fig
+    
