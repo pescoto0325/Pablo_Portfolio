@@ -1,5 +1,5 @@
-# Pablo's Data Science Portfolio
-Data Science Projects
+# Pablo's Data Analytics Portfolio
+Data Analytics Projects
 
 Hello there and welcome to my highlight reel for projects! 
 
