@@ -10,6 +10,11 @@ Tech Stack
 - Tableau: Ingested, transformed and labeled data from different sources to create dashboards
 - Python (Pandas, Seaborn and Scikit - learn): Used pandas to capture data from APIs, SQL servers, Excel files and transformed them into multiple tables for Reporting. 
 
+Some accolades I am proud of:
+
+- Built Data Ingestion tool and Analytics structure for a Start up to increase revenue.
+- Collaborate with cross-functional teams across the organization to ensure that analytics and reporting are aligned with company priorities
+- Serve as a trusted strategic advisor to senior leadership on Data, and provided insights to solve Business Problems.=
 
 ## Project 1: [Predictive Analytics: Creating a Recommender system using Singular Value Decomposition](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Pablo_Escoto_A12_Predictive_Analytics.ipynb)
 
