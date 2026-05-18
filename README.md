@@ -1,10 +1,11 @@
 # Pablo's Data Analytics Portfolio
 Data Analytics Projects
 
+Who is Pablo?
 
 I’m a data and people analytics professional with experience transforming complex workforce and business data into actionable insights. My background spans HRIS, BI engineering, and analytics, with hands-on expertise in tools like Power BI, SQL, Python, Workday, and Snowflake. I have been a Data Engineer, a Data Analyst and a Data Consultant which has allowed me to be a pipeline builder, a dashboard designer and most importantly a problem solver. When I'm not working with Data, I'm having fun with Data, feel free to take  alook at a couple of my projects below. Currently working on integrating AI with People analytics and building pipelines for AI usage, more to come!
 
-Tech Stack
+Tech Stack:
 - Power BI: Build self service reports and got data ready for copilot usage
 - SQL: Built queries for pipelines and created validationos for proper data ingestion
 - Tableau: Ingested, transformed and labeled data from different sources to create dashboards
