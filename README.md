@@ -1,13 +1,21 @@
 # Pablo's Data Analytics Portfolio
 Data Analytics Projects
 
-Hello there and welcome to my highlight reel for projects! 
+
+I’m a data and people analytics professional with experience transforming complex workforce and business data into actionable insights. My background spans HRIS, BI engineering, and analytics, with hands-on expertise in tools like Power BI, SQL, Python, Workday, and Snowflake. I have been a Data Engineer, a Data Analyst and a Data Consultant which has allowed me to be a pipeline builder, a dashboard designer and most importantly a problem solver. When I'm not working with Data, I'm having fun with Data, feel free to take  alook at a couple of my projects below. Currently working on integrating AI with People analytics and building pipelines for AI usage, more to come!
+
+Tech Stack
+- Power BI: Build self service reports and got data ready for copilot usage
+- SQL: Built queries for pipelines and created validationos for proper data ingestion
+- Tableau: Ingested, transformed and labeled data from different sources to create dashboards
+- Python (Pandas, Seaborn and Scikit - learn): Used pandas to capture data from APIs, SQL servers, Excel files and transformed them into multiple tables for Reporting. 
+
 
 ## Project 1: [Predictive Analytics: Creating a Recommender system using Singular Value Decomposition](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Pablo_Escoto_A12_Predictive_Analytics.ipynb)
 
 In this exercise, we will get some hands on experience at building a product recommender system using collaborative filtering. In particular, we will implement Singular Value Decomposition. Using python, we would get an algorithm to suggest restaurants to user's based on their previous visits but also using restaurants that host similar clients. We are going to do so by using ratings as our numerical value attaching 1 restaurant and 1 user to each review. To prevent fake reviews we will only use 1 review per user per restaurant.
 
-We are going to using over 208166 reviews from users and 10233 ratings from restaurants using Yelp's API dataset
+We are going to using over 208,166 reviews from users and 10,233 ratings from restaurants using Yelp's API dataset
 
 Questions this project answers:
 * What restaurants are similar/competitive to each other?
@@ -31,7 +39,7 @@ Applications
 
 ## Project 2: [Regression Analysis: Price per stat Model](https://github.com/pescoto0325/Pablo_Portfolio/blob/main/Price%20per%20stat%20Model)
 Why are the bests players in real life not the most expensive players in the game?
-In this analysis,  linear and logistic regression are used to understand the relationship between stats and in game price for all the players. The [dataset](https://www.kaggle.com/datasets/mohammedessam97/fifa-22-fut-players-dataset) shows the stats and in-game price for players in FIFA 22.
+In this analysis,  linear and logistic regression are used to understand the relationship between stats and in game price for all the players. The [dataset](https://www.kaggle.com/datasets/mohammedessam97/fifa-22-fut-players-dataset) shows the stats and in-game price for players in FIFA 26.
 
 Context:FIFA is the biggest football videogame in the world, it has its own currency (FIFA points) which can be used to buy players in its own market (FUTM). The market has its own price ranges (max price and min price) which means players are proposed values by the developers of the game, not the market sellers/buyers. Why is the highest rated player not the most expensive player?
 
