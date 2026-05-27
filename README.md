@@ -7,7 +7,7 @@ I’m a data and people analytics professional with experience transforming comp
 
 (https://app.powerbi.com/view?r=eyJrIjoiN2IwYjYzYTItOTg1NS00ZGUwLTg1MjYtYzRjZDNjZWY5YTIxIiwidCI6IjYxMWQ0YWIyLWRjNWEtNGZmZC04OTk5LTJjMWY2ZDUwYjE4OCJ9)
 
-[https://app.powerbi.com/view?r=eyJrIjoiN2IwYjYzYTItOTg1NS00ZGUwLTg1MjYtYzRjZDNjZWY5YTIxIiwidCI6IjYxMWQ0YWIyLWRjNWEtNGZmZC04OTk5LTJjMWY2ZDUwYjE4OCJ9]
+[https://app.powerbi.com/view?r=eyJrIjoiN2IwYjYzYTItOTg1NS00ZGUwLTg1MjYtYzRjZDNjZWY5YTIxIiwidCI6IjYxMWQ0YWIyLWRjNWEtNGZmZC04OTk5LTJjMWY2ZDUwYjE4OCJ9](https://app.powerbi.com/view?r=eyJrIjoiN2IwYjYzYTItOTg1NS00ZGUwLTg1MjYtYzRjZDNjZWY5YTIxIiwidCI6IjYxMWQ0YWIyLWRjNWEtNGZmZC04OTk5LTJjMWY2ZDUwYjE4OCJ9)
 
 Tech Stack:
 - Power BI: Build self service reports and got data ready for copilot usage
