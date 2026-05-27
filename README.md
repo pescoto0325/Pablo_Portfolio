@@ -5,7 +5,9 @@ Who is Pablo?
 
 I’m a data and people analytics professional with experience transforming complex workforce and business data into actionable insights. My background spans HRIS, BI engineering, and analytics, with hands-on expertise in tools like Power BI, SQL, Python, Workday, and Snowflake. I have been a Data Engineer, a Data Analyst and a Data Consultant which has allowed me to be a pipeline builder, a dashboard designer and most importantly a problem solver. When I'm not working with Data, I'm having fun with Data, feel free to take  alook at a couple of my projects below. Currently working on integrating AI with People analytics and building pipelines for AI usage, more to come!
 
-( https://app.powerbi.com/view?r=eyJrIjoiN2IwYjYzYTItOTg1NS00ZGUwLTg1MjYtYzRjZDNjZWY5YTIxIiwidCI6IjYxMWQ0YWIyLWRjNWEtNGZmZC04OTk5LTJjMWY2ZDUwYjE4OCJ9 )
+(https://app.powerbi.com/view?r=eyJrIjoiN2IwYjYzYTItOTg1NS00ZGUwLTg1MjYtYzRjZDNjZWY5YTIxIiwidCI6IjYxMWQ0YWIyLWRjNWEtNGZmZC04OTk5LTJjMWY2ZDUwYjE4OCJ9)
+
+https://app.powerbi.com/view?r=eyJrIjoiN2IwYjYzYTItOTg1NS00ZGUwLTg1MjYtYzRjZDNjZWY5YTIxIiwidCI6IjYxMWQ0YWIyLWRjNWEtNGZmZC04OTk5LTJjMWY2ZDUwYjE4OCJ9
 
 Tech Stack:
 - Power BI: Build self service reports and got data ready for copilot usage
